@@ -4,7 +4,7 @@ const { position, workPlace, start, end, content } = Astro.props;
 
 <article class="mt-4">
   <h1 class="font-semibold">{position}</h1>
-  <div class="flex justify-between text-sm">
+  <div class="flex flex-col gap-2 lg:flex-row justify-between text-sm">
     <p>{workPlace}</p>
     <p>{start} - {end ? end : "PRESENT"}</p>
   </div>

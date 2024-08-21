@@ -1,0 +1,12 @@
+---
+import Heading from "../Typography/Heading.astro";
+
+const { skills } = Astro.props;
+---
+
+<div>
+  <Heading> Skills </Heading>
+  <div class="space-y-2">
+    {skills.map((skill: string) => <p>{skill}</p>)}
+  </div>
+</div>

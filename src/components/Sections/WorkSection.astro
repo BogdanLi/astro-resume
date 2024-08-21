@@ -1,0 +1,11 @@
+---
+import Heading from "../Typography/Heading.astro";
+import WorkPlace from "../WorkPlace.astro";
+
+const { workBackground } = Astro.props;
+---
+
+<div>
+  <Heading>work experience</Heading>
+  {workBackground.map((el) => <WorkPlace {...el} />)}
+</div>
