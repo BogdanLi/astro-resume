@@ -9,8 +9,18 @@ import Title from "../../components/Title.astro";
 import Container from "../../components/UI/Container.astro";
 import Divider from "../../components/UI/Divider.astro";
 import DottedDivider from "../../components/UI/DottedDivider.astro";
-import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Layout from "../../layouts/Layout.astro";
+import LanguagePicker from "../../components/LanguagePicker.astro";
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+
+export async function getStaticPaths() {
+  const languages = ["en", "ru"];
+
+  return languages.map((lang) => ({
+    params: { lang },
+  }));
+}
+
 const workBackground: {
   position: string;
   workPlace: string;
@@ -75,7 +85,8 @@ const t = useTranslations(lang);
 ---
 
 <Layout title="Bogdan Li">
-  <Title title={t("bogdan.name")} position="React.js Developer" />
+  <Title title={t("bogdan.name")} position={t("bogdan.position")} />
+  <LanguagePicker />
   <Container>
     <Divider />
   </Container>
