@@ -11,7 +11,13 @@ import SkillsSection from "../components/Sections/SkillsSection.astro";
 import EducationSection from "../components/Sections/EducationSection.astro";
 import LanguagesSection from "../components/Sections/LanguagesSection.astro";
 
-const workBackground = [
+const workBackground: {
+  position: string;
+  workPlace: string;
+  start: string;
+  end?: string;
+  content: string[];
+}[] = [
   {
     position: "Course Instructor",
     workPlace: "skills accelerator Ilmhona",

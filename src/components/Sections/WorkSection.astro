@@ -7,5 +7,15 @@ const { workBackground } = Astro.props;
 
 <div>
   <Heading>work experience</Heading>
-  {workBackground.map((el) => <WorkPlace {...el} />)}
+  {
+    workBackground.map(
+      (el: {
+        position: string;
+        workPlace: string;
+        start: string;
+        end?: string;
+        content: string[];
+      }) => <WorkPlace {...el} />
+    )
+  }
 </div>
