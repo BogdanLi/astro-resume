@@ -1,12 +1,16 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Heading from "../Typography/Heading.astro";
 import WorkPlace from "../WorkPlace.astro";
 
 const { workBackground } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div>
-  <Heading>work experience</Heading>
+  <Heading>{t("workBackground.title")}</Heading>
   {
     workBackground.map(
       (el: {

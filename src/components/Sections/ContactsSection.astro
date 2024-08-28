@@ -1,12 +1,16 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import MailIcon from "../Icons/MailIcon.astro";
 import PhoneIcon from "../Icons/PhoneIcon.astro";
 import WebIcon from "../Icons/WebIcon.astro";
 import Heading from "../Typography/Heading.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div>
-  <Heading>Contact</Heading>
+  <Heading>{t("contacts.title")}</Heading>
   <div class="space-y-4">
     <div class="flex gap-2">
       <PhoneIcon /> +992 03 200 0043

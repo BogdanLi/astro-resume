@@ -1,14 +1,19 @@
 ---
-const { position, workPlace, start, end, content } = Astro.props;
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
+
+const { position, workPlace, date, content } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <article class="mt-4">
-  <h1 class="font-semibold">{position}</h1>
+  <h1 class="font-semibold">{t(position)}</h1>
   <div class="flex flex-col gap-2 lg:flex-row justify-between text-sm">
-    <p>{workPlace}</p>
-    <p>{start} - {end ? end : "PRESENT"}</p>
+    <p>{t(workPlace)}</p>
+    <p>{t(date)}</p>
   </div>
   <div class="text-sm ps-4 my-2">
-    {content.map((el: string) => <li>{el}</li>)}
+    {content.map((el: string) => <li>{t(el)}</li>)}
   </div>
 </article>

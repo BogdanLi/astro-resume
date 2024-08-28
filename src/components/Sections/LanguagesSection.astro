@@ -1,20 +1,24 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Heading from "../Typography/Heading.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div>
-  <Heading>languages</Heading>
+  <Heading>{t("languages.title")}</Heading>
   <div class="space-y-2">
     <div class="grid grid-cols-12 items-center gap-4">
-      <p class="col-span-4">Russian</p>
+      <p class="col-span-4">{t("languages.ru")}</p>
       <div class="col-span-8 h-2 bg-black w-full rounded-full"></div>
     </div>
     <div class="grid grid-cols-12 items-center gap-4">
-      <p class="col-span-4">English</p>
+      <p class="col-span-4">{t("languages.en")}</p>
       <div class="col-span-8 h-2 bg-black w-11/12 rounded-full"></div>
     </div>
     <div class="grid grid-cols-12 items-center gap-4">
-      <p class="col-span-4">Korean</p>
+      <p class="col-span-4">{t("languages.ko")}</p>
       <div class="col-span-8 h-2 bg-black w-1/4 rounded-full"></div>
     </div>
   </div>

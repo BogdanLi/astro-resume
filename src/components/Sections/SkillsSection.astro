@@ -1,11 +1,15 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Heading from "../Typography/Heading.astro";
 
 const { skills } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div>
-  <Heading> Skills </Heading>
+  <Heading>{t("skills.title")}</Heading>
   <div class="space-y-2">
     {skills.map((skill: string) => <p>{skill}</p>)}
   </div>

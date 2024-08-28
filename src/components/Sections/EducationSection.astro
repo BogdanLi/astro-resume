@@ -1,13 +1,17 @@
 ---
+import { getLangFromUrl, useTranslations } from "../../i18n/utils";
 import Heading from "../Typography/Heading.astro";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <div>
-  <Heading> EDUCATION </Heading>
+  <Heading> {t("education.title")} </Heading>
   <div class="space-y-2">
-    <h2 class="font-semibold">High School Degree</h2>
+    <h2 class="font-semibold">{t("education.degree")}</h2>
     <h1 class="text-xl font-semibold">
-      Federal State Government Institution Secondary School №6
+      {t("education.subtitle")}
     </h1>
     <p>2012 - 2023</p>
   </div>
