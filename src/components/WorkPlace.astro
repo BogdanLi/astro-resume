@@ -14,6 +14,11 @@ const t = useTranslations(lang);
     <p>{t(date)}</p>
   </div>
   <div class="text-sm ps-4 my-2">
-    {content.map((el: string) => <li>{t(el)}</li>)}
+    {
+      content.map((el: string) => {
+        // @ts-ignore
+        <li>{t(el)}</li>;
+      })
+    }
   </div>
 </article>
