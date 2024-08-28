@@ -17,7 +17,7 @@ const t = useTranslations(lang);
     {
       content.map((el: string) => {
         // @ts-ignore
-        <li>{t(el)}</li>;
+        return <li>{t(el)}</li>;
       })
     }
   </div>
