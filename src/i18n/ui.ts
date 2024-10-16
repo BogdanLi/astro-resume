@@ -26,12 +26,18 @@ export const ui = {
     "workBackground.position1": "Course Intructor",
     "workBackground.position2": "Course Intructor",
     "workBackground.position3": "Front-end Developer",
+    "workBackground.position4": "Course Intructor",
+    "workBackground.position5": "Fullstack Developer",
     "workBackground.company1": "skills accelerator Ilmhona",
     "workBackground.company2": "Megafon Tajikistan",
     "workBackground.company3": "Livo",
+    "workBackground.company4": "TechnoHub Dushanbe",
+    "workBackground.company5": "GeCraft",
     "workBackground.date1": "MAY 2023 - PRESENT",
     "workBackground.date2": "NOVEMBER 2023 - MARCH 2024",
-    "workBackground.date3": "JANUARY 2024 - PRESENT",
+    "workBackground.date3": "JANUARY 2024 - OCTOBER 2024",
+    "workBackground.date4": "OCTOBER 2024 - PRESENT",
+    "workBackground.date5": "SEPTEMBER 2024 - PRESENT",
     "workBackground.key1":
       "Revamped and modernized three foundational tech courses: Introduction to JavaScript, Introduction to Python, and Front-End Development from Scratch, resulting in a 50% increase in student comprehension and engagement.",
     "workBackground.key2":
@@ -56,6 +62,18 @@ export const ui = {
       "Implemented effective strategies to guide team members in completing tasks efficiently, ensuring timely project completion.",
     "workBackground.key12":
       "Architected and developed a state-of-the-art website for the company, incorporating modern technologies to improve performance, scalability, and user engagement.",
+    "workBackground.key13":
+      "Created realistic, project-based tasks that simulate actual development scenarios to prepare students for professional work environments.",
+    "workBackground.key14":
+      "Provided hands-on support, mentoring students through problem-solving and debugging, ensuring they are ready for real-world challenges.",
+    "workBackground.key15":
+      "Continuously adapted course content based on feedback and emerging industry trends to maintain relevance in the fast-evolving tech landscape.",
+    "workBackground.key16":
+      "Maintained and improved advanced open-source web systems, ensuring reliability, security, and performance across both frontend and backend architectures.",
+    "workBackground.key17":
+      "Regularly updated existing applications built with React, Next.js, and Postgres, applying optimizations and resolving bugs to enhance user experience.",
+    "workBackground.key18":
+      "Collaborated with contributors from open-source communities to apply patches, upgrade libraries, and integrate security fixes, maintaining compliance with industry standards.",
   },
   ru: {
     "bogdan.name": "Богдан Ли",
@@ -77,12 +95,18 @@ export const ui = {
     "workBackground.position1": "Инструктор курсов",
     "workBackground.position2": "Инструктор курсов",
     "workBackground.position3": "Front-end Разработчик",
+    "workBackground.position4": "Инструктор курсов",
+    "workBackground.position5": "Fullstack Разработчик",
     "workBackground.company1": "акселератор навыков Илмхона",
     "workBackground.company2": "Мегафон Таджикистан",
     "workBackground.company3": "Ливо",
+    "workBackground.company4": "TechnoHub Dushanbe",
+    "workBackground.company5": "GeCraft",
     "workBackground.date1": "МАЙ 2023 - Н.В.",
     "workBackground.date2": "НОЯБРЬ 2023 - МАРТ 2024",
-    "workBackground.date3": "ЯНВАРЬ 2024 - Н.В.",
+    "workBackground.date3": "ЯНВАРЬ 2024 - ОКТЯБРЬ 2024",
+    "workBackground.date4": "ОКТЯБРЬ 2024 - Н.В.",
+    "workBackground.date5": "СЕНТЯБРЬ 2024 - Н.В.",
     "workBackground.key1":
       "Обновил и модернизировал три базовых технических курса: Введение в JavaScript, Введение в Python и Фронтенд-разработка с нуля, что привело к 50% увеличению понимания и вовлеченности студентов.",
     "workBackground.key2":
@@ -107,5 +131,17 @@ export const ui = {
       "Внедрил эффективные стратегии для руководства членами команды в эффективном выполнении задач, обеспечивая своевременное завершение проектов.",
     "workBackground.key12":
       "Спроектировал и разработал современный веб-сайт для компании, внедряя современные технологии для улучшения производительности, масштабируемости и вовлеченности пользователей.",
+    "workBackground.key13":
+      "Создавал реалистичные, основанные на проектах задания, которые имитируют реальные сценарии развития, чтобы подготовить студентов к профессиональной рабочей среде.",
+    "workBackground.key14":
+      "Оказывал практическую поддержку, наставляя студентов в решении проблем и отладке, обеспечивая их готовность к решению реальных задач.",
+    "workBackground.key15":
+      "Постоянно адаптировал содержание курса на основе отзывов и возникающих отраслевых тенденций, чтобы сохранить актуальность в быстро меняющемся технологическом ландшафте.",
+    "workBackground.key16":
+      "Поддерживал и совершенствовал передовые веб-системы с открытым исходным кодом, обеспечивая надежность, безопасность и производительность в архитектуре как фронтенда, так и бэкенда.",
+    "workBackground.key17":
+      "Регулярно обновлял существующие приложения, созданные на основе React, Next.js и Postgres, применяя оптимизацию и устраняя ошибки для повышения удобства работы пользователей.",
+    "workBackground.key18":
+      "Сотрудничал с разработчиками из сообществ с открытым исходным кодом для применения патчей, обновления библиотек и интеграции исправлений безопасности, поддерживая соответствие отраслевым стандартам.",
   },
 } as const;
