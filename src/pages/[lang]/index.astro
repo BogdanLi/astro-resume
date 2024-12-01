@@ -12,6 +12,7 @@ import DottedDivider from "../../components/UI/DottedDivider.astro";
 import Layout from "../../layouts/Layout.astro";
 import LanguagePicker from "../../components/LanguagePicker.astro";
 import { getLangFromUrl, useTranslations } from "../../i18n/utils";
+import supabaseClient from "../../supabase";
 
 export async function getStaticPaths() {
   const languages = ["en", "ru"];
@@ -100,6 +101,11 @@ const skills = [
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
+
+(async () => {
+  const { data } = await supabaseClient.from("Work Experience").select("*");
+  console.log(data);
+})();
 ---
 
 <Layout title="Bogdan Li">
