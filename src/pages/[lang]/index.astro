@@ -102,10 +102,9 @@ const skills = [
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 
-(async () => {
-  const { data } = await supabaseClient.from("Work Experience").select("*");
-  console.log(sjdsl);
-})();
+// (async () => {
+//   const { data } = await supabaseClient.from("Work Experience").select("*");
+// })();
 ---
 
 <Layout title="Bogdan Li">
